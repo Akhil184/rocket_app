@@ -21,13 +21,14 @@ class _HomeScreenState extends State<HomeScreen> {
   initState(){
     getRocketDetails();
     super.initState();
-
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar:AppBar(title:Text('list'),),
+      appBar:AppBar(title:Text('List'),
+      centerTitle:true,
+      ),
       body:ListView.builder(
         itemCount:3,
           itemBuilder:(context,index){
